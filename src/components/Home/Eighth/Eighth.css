@@ -1,0 +1,66 @@
+.eight_container {
+    background-color: rgb(124, 225, 122);
+}
+
+.eight_content {
+    display: flex;
+    flex-direction: column; /* Stack content on smaller screens */
+    justify-content: space-between;
+    padding: 2vh 5vw;
+}
+
+.eight_right {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    justify-content: space-between;
+    gap: 4vh; /* Vertical gap for smaller screens */
+}
+
+.eight_last {
+    background-color: rgb(4, 19, 134);
+    color: rgb(169, 170, 173);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding: 2vh 5vw;
+    justify-content: space-between;
+    gap: 2vh; /* Add vertical spacing for smaller screens */
+}
+
+.eight_last_left {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    gap: 16px; /* Reduce gap for better fit on smaller screens */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .eight_content {
+        flex-direction: row; /* Horizontal layout on medium and larger screens */
+    }
+
+    .eight_right {
+        flex-direction: row; /* Horizontal layout for right content */
+        gap: 8vw; /* Maintain spacing on larger screens */
+    }
+
+    .eight_last {
+        flex-direction: row; /* Horizontal layout on medium and larger screens */
+        align-items: center; /* Vertically center content */
+        gap: 0; /* Remove vertical spacing for larger screens */
+    }
+
+    .eight_last_left {
+        flex-direction: row; /* Horizontal layout for the left content */
+        gap: 24px; /* Restore larger gap */
+    }
+}
+
+@media (min-width: 1024px) {
+    .eight_content {
+        padding: 3vh 8vw; /* Add more padding on larger screens */
+    }
+
+    .eight_last {
+        padding: 3vh 8vw; /* Add padding for the last section on larger screens */
+    }
+}

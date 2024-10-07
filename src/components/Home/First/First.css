@@ -1,0 +1,62 @@
+.first_container{
+    background-image: url('../../../assets/bk1.jpg'); /* adjust the path */
+    background-size: cover;
+    background-position: center;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+
+    /* height: 100vh; */
+}
+.first_content{
+    margin-top: 150px;
+    
+}
+.first_slogan{
+    font-size: 48px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    padding-top: 5vh; 
+    color: white;
+}
+
+.first_botton{
+    display: flex;
+
+    justify-content: center;
+    /* place-self: center; */
+    gap: 1vw;
+    
+}
+.first_btn1{
+    background-color: blue;
+    padding: 10px 3vw; 
+    border-radius: 20px;
+    color: white;
+}
+.first_btn2{
+    background-color: green;
+    padding: 10px 1vw; 
+    border-radius: 20px;
+    color: white;
+}
+.first_btn1_play{
+    margin-top: 5px;
+    font-size: 42px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+}
+@media(max-width:500px){
+    .first_slogan{
+        font-size: 28px;
+    }
+    .first_botton{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}

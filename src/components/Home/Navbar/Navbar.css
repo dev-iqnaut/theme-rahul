@@ -1,0 +1,83 @@
+.navbar_container{
+    background-color: #FEFEFF ;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: bold; */
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  width: 100vw;
+  position: fixed;
+}
+.navbar_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+    align-items: center;
+}
+.navbar_menu {
+    display: none;
+    font-size: 28px;
+}
+.navbar_logo{
+    font-weight:bold;
+}
+
+.navbar_left{
+    display: flex;
+}
+/* .navbar_logo{
+
+} */
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute; /* Allows the list to appear on hover without affecting layout */
+    background-color: white;
+    padding: 10px;
+     /* Add some shadow for clarity */
+    border-radius: 0 0 10px 10px;
+  }
+  
+  /* Show the inner list when hovering over the parent link */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Optional: Style for the dropdown link */
+  .dropdown-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  
+  /* Optional: Style for the list items */
+  .dropdown-content p {
+    list-style: none;
+    margin: 5px 0;
+  }
+
+
+.navbar_left_content{
+   display: flex;
+   gap: 2vw;
+   /* padding-left: 1vw; */
+}
+.navbar_right{
+   padding: 10px 18px;
+   background-color: rgb(29,31,53);
+   color: white;
+   border-radius: 25px;
+}
+
+@media (max-width: 700px) {
+    .navbar_left_content {
+        display: none;
+    }
+    .navbar_menu {
+        display: block;
+        color:black;
+    }
+}

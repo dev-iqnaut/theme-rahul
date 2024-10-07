@@ -1,0 +1,90 @@
+.seventh_container{
+    background-color:#FEFEFF;
+    padding:8vh 0;
+}
+.seventh_summerDay{
+    min-height:450px;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh auto;
+    background-color: #FFF6F1;
+    border-radius: 10px;
+}
+.seventh_summerDay_right{
+    /* background-color: yellow; */
+    width: 50vw;
+    border-radius: 10px;
+}
+.seventh_summerDay_left_content{
+    padding: 14vh 5vw;
+}
+.seventh_summerDay_left_content_available{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    text-align: center;
+    gap: 6vw;
+}
+.seventh_summerDay_left_content_btn{
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgb(255,221,0);
+    color: black;
+    font-weight: bold;
+    margin-bottom: 35px;
+    margin-top:-35px;
+}
+.seventh_summerDay_left_content_h1{
+    font-size: 48px;
+    font-weight:bold;
+}
+
+
+@media (max-width: 768px) {
+    .seventh_summerDay {
+        padding: 3vh 2vw; /* Reduce padding for smaller screens */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seventh_summerDay_right{
+        width:100%;
+    }
+    .seventh_summerDay_left_content {
+        padding: 6vh 2vw;
+    }
+    .seventh_summerDay_left_content_h1 {
+        font-size: 24px; /* Adjust font size for small screens */
+    }
+    .seventh_summerDay_left_content_available {
+        flex-direction: column; /* Stack the availability options vertically */
+        gap: 2vh;
+        margin-top: 30px;
+    }
+    .seventh_summerDay_left_content_btn {
+        width: 80px; /* Reduce button size */
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .seventh_summerDay {
+        padding: 2vh 1vw;
+    }
+    .seventh_summerDay_left_content {
+        padding: 4vh 1vw;
+    }
+    .seventh_summerDay_left_content_h1 {
+        font-size: 20px; /* Further reduce font size for mobile */
+    }
+    .seventh_summerDay_left_content_available {
+        gap: 1vh; /* Reduce the gap between availability items */
+    }
+    .seventh_summerDay_left_content_btn {
+        width: 70px; /* Further reduce button size */
+        padding: 6px 0;
+    }
+}
+

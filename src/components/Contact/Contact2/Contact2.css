@@ -1,0 +1,85 @@
+.contact2_container {
+    background-color: #FED359;
+    padding: 5vh 6.5vw; /* Padding for larger screens */
+}
+
+.contact2_map {
+    width: 86vw; /* Width for larger screens */
+    height: 500px; /* Height for larger screens */
+    margin-top: 30px; /* Margin for spacing */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.contact2_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.contact2_content_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vw; /* Gap between content items */
+}
+
+.contact2_content_rightContent {
+    /* Additional styles can be added here */
+}
+
+.contact2_content_right_cartoon {
+    height: 160px; /* Height for cartoon image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact2_container {
+        padding: 4vh 4vw; /* Adjust padding for tablets */
+    }
+
+    .contact2_map {
+        width: 100%; /* Full width on smaller screens */
+        height: 300px; /* Reduced height for smaller screens */
+    }
+
+    .contact2_content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .contact2_content_right {
+        flex-direction: column; /* Stack right content vertically */
+        gap: 5vw; /* Reduced gap for smaller screens */
+        width: 100%; /* Full width for right content */
+    }
+
+    .contact2_content_right_cartoon {
+        height: 120px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact2_container {
+        padding: 3vh 2vw; /* Further reduce padding for mobile */
+    }
+
+    .contact2_map {
+        height: 200px; /* Further reduce height for mobile */
+    }
+
+    .contact2_content {
+        font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    }
+
+    .contact2_content_right {
+        gap: 2vw; /* Smaller gap for mobile */
+    }
+
+    .contact2_content_right_cartoon {
+        height: 100px; /* Further reduce height for mobile */
+    }
+}

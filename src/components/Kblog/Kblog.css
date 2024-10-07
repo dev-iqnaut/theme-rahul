@@ -1,0 +1,106 @@
+.kblog_container {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding:5vh 0;
+}
+
+.kblog_headingDiv {
+    background-color: #FFF6F1;
+    text-align: center;
+    padding: 9vh 0 9vh 0;
+    
+}
+
+.kblog_content_1 {
+    margin: 0 auto;
+    padding: 6vh 5vw; /* Adjusted padding for responsiveness */
+    text-align: center;
+    background-color: #FEFEFF;
+    max-width: full; /* Limiting width on larger screens */
+}
+
+.kblog_content_1_image {
+    margin: 2vh auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* Ensures the image scales properly */
+    height: auto; /* Maintain aspect ratio */
+}
+.kblog_featured{
+    background-color: #D8F7FE;
+}
+.kblog_featured_allData{
+    display: flex;
+    padding: 0 5vw 6vh 5vw;
+    justify-content:space-between;
+}
+.kblog_featured_Data1_image{
+    width: 42vw;
+}
+.kblog_featured_Data1_content{
+    margin-top: 16px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.kblog_featured_Data1_date{
+    text-align:center;
+    padding: 16px 18px;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight:bold;
+    color:white;
+}
+.kblog_featured_Data1_text{
+    font-size: 20px;
+}
+@media (max-width: 768px){
+    .kblog_featured_allData{
+        display:flex;
+        flex-direction:column;
+        text-align:start;
+    }
+    .kblog_featured_Data1_image{
+        width:100vw;
+    }
+    .kblog_featured_Data1_date{
+        width:100vw;
+    }
+    .kblog_featured_Data1_text{
+        font-size: 20px;
+        text-align:justify;
+    }
+}
+
+/* Media Query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .kblog_headingDiv {
+        padding: 4vh 2vw; /* Reduced padding for smaller screens */
+    }
+
+    .kblog_content_1 {
+        padding: 4vh 2vw; /* Adjust padding */
+    }
+
+    .kblog_content_1_image {
+        max-width: 90%; /* Adjust image width on smaller screens */
+    }
+}
+
+/* Media Query for mobile phones */
+@media (max-width: 480px) {
+    .kblog_headingDiv {
+        padding: 3vh 1vw; /* Further reduce padding for mobile */
+    }
+
+    .kblog_content_1 {
+        padding: 3vh 1vw;
+    }
+
+    .kblog_content_1_image {
+        max-width: 100%; /* Full width for mobile devices */
+    }
+}

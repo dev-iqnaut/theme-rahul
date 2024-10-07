@@ -1,0 +1,65 @@
+[
+    {
+        "title":"Toddler Class",
+        "imageSrc": "classes/class1.jpg",
+        "time":"08:00 A.M.",
+        "quota":"15",
+        "Age":"2-3 y.o."
+    },
+    {
+        "title":"Alphabet Master",
+        "imageSrc": "classes/class1.jpg",
+        "time":"1:00 A.M.",
+        "quota":"20",
+        "Age":"4-5 y.o."
+    },
+    {
+        "title":"Space Science",
+        "imageSrc": "classes/class1.jpg",
+        "time":"01:00 P.M.",
+        "quota":"15",
+        "Age":"5-7 y.o."
+    },
+    {
+        "title":"Sunshine Tots",
+        "imageSrc": "classes/class1.jpg",
+        "time":"07:00 A.M.",
+        "quota":"10",
+        "Age":"1-2 y.o."
+    },
+    {
+        "title":"Little Explorers",
+        "imageSrc": "classes/class1.jpg",
+        "time":"10:00 A.M.",
+        "quota":"12",
+        "Age":"6-7 y.o."
+    },
+    {
+        "title":"Creative Minds ",
+        "imageSrc": "classes/class1.jpg",
+        "time":"09:00 A.M.",
+        "quota":"15",
+        "Age":"3-4 y.o."
+    },
+    {
+        "title":"Music Maestro",
+        "imageSrc": "classes/class1.jpg",
+        "time":"12:00 A.M.",
+        "quota":"20",
+        "Age":"6-7 y.o."
+    },
+    {
+        "title":"Art & Crafting",
+        "imageSrc": "classes/class1.jpg",
+        "time":"11:00 A.M.",
+        "quota":"16",
+        "Age":"4-6 y.o."
+    },
+    {
+        "title":"Baby Class",
+        "imageSrc": "classes/class1.jpg",
+        "time":"07:00 A.M.",
+        "quota":"5",
+        "Age":"1-2 y.o."
+    }
+]

@@ -1,0 +1,102 @@
+.fifth_container{
+    background-color:#FED359;
+    padding: 6vh 0;
+}
+.fifth_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+    gap: 60px;
+}
+.fifth_leftbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 80px; */
+    padding-left: 20px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    margin-bottom:10px;
+    border-radius: 10px;
+}
+
+.fifth_rightbox{
+    margin-top:30px;
+}
+.fifth_rightbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 80px; */
+    padding-left: 20px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    margin:5px;
+    border-radius: 10px;
+}
+.fifth_box{
+    display: flex;
+    gap: 10px;
+}
+.fifth_right_data{
+    margin-top: 220px;
+}
+.fifth_right_data_heading{
+    font-size:48px;
+    font-weight:bold;
+}
+.fifth_right_data_para{
+
+}
+
+@media (max-width: 1024px) {
+    .fifth_content {
+        gap: 40px; /* Reduce the gap between elements */
+        padding: 2vh 3vw;
+    }
+    .fifth_right_data {
+        margin-top: 150px; /* Adjust the top margin for medium screens */
+    }
+    .fifth_right_data_heading {
+        font-size: 28px; /* Adjust heading size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .fifth_content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        padding: 2vh 2vw;
+        gap: 20px; /* Reduce the gap between elements */
+    }
+    .fifth_leftbox1, 
+    .fifth_rightbox1 {
+        width: 100%; /* Make the boxes full width on small screens */
+        height: auto;
+    }
+    .fifth_right_data {
+        margin-top: 0; /* Remove the large top margin for small screens */
+    }
+    .fifth_right_data_heading {
+        font-size: 24px; /* Further adjust heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    .fifth_content {
+        padding: 2vh 1vw;
+    }
+    .fifth_leftbox1, 
+    .fifth_rightbox1 {
+        padding-left: 10px; /* Adjust padding for very small screens */
+    }
+    .fifth_right_data_heading {
+        font-size: 20px; /* Smaller heading for very small screens */
+    }
+    .fifth_box{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}

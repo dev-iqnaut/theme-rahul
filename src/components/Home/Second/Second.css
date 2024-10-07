@@ -1,0 +1,61 @@
+.secong_content{
+    display: flex;
+    justify-content:space-between;
+    padding: 10vh 5vw;
+    align-items: center;
+    background-color:#FEFEFF;
+    flex-wrap: wrap;
+}
+.second_left{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.second_right{
+    height:full;;
+}
+.second_h2{
+    font-size:48px;
+    font-weight:bold;
+}
+.second_button{
+    background-color: #F63C50;
+    padding: 10px 1vw;
+    width:150px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    margin-top:20px;
+}
+
+@media (max-width: 1024px) {
+    .second_h2 {
+        font-size: 36px; /* Adjust font size for medium screens */
+    }
+    .second_content {
+        padding: 8vh 3vw; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .second_h2 {
+        font-size: 28px; /* Further adjust font size for small screens */
+    }
+    .second_content {
+        flex-direction: column-reverse; /* Stack elements vertically on smaller screens */
+        padding: 6vh 2vw;
+    }
+    .second_button {
+        width: 100%; /* Button takes full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .second_h2 {
+        font-size: 24px; /* Smaller font size for very small screens */
+    }
+    .second_button {
+        width: 100%; /* Button takes full width */
+        padding: 10px; /* Adjust padding */
+    }
+}

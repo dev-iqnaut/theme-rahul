@@ -1,0 +1,63 @@
+.hfaq_container{
+    background-color: #D8F7FE;
+}
+.hfaq_content{
+    padding: 6vh 5vw; 
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.hfaq_left{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content:space-between;
+}
+.hfaq_left_h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.hfaq_left_ask{
+    padding: 5px;
+    border-radius: 25px;
+    text-align:center;
+    background-color:#AFD133;
+}
+
+
+
+@media (max-width: 768px) {
+    .hfaq_content {
+      flex-direction: column; /* Stack items vertically */
+      padding: 4vh 3vw;
+    }
+  
+    .hfaq_left {
+      margin-bottom: 30px;
+    }
+  
+    .hfaq_left_h1 {
+      font-size: 36px; /* Smaller font size for smaller screens */
+      text-align: center; /* Center the heading */
+    }
+  
+    .hfaq_left_ask {
+      padding: 10px; /* Increase padding for better touch experience */
+      border-radius: 20px;
+      width: 100%; /* Full width on smaller screens */
+      margin-top: 10px;
+    }
+  }
+  
+  /* Further adjustments for very small screens */
+  @media (max-width: 480px) {
+    .hfaq_left_h1 {
+      font-size: 32px; /* Smaller font size for extra small screens */
+      font-weight: bold;
+    }
+  
+    .hfaq_left_ask {
+      font-size: 14px; /* Adjust font size for buttons */
+      text-align:center;
+    }
+  }

@@ -1,0 +1,135 @@
+.classes_cards {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the cards to the next row */
+    justify-content: space-between; /* Evenly space cards */
+    padding: 5vh 5vw 3vh 5vw;
+    margin: 5vh 5vw;
+    gap: 3vh; /* Add gap between rows */
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.classes_headingDiv{
+    padding: 8vh 0; 
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      background-color: rgb(163,241,255);
+      background-image: url('../../../assets/doodleBackground.jpg');
+      text-align: center;
+}
+.classes_card_content1{
+    text-align: center;
+}
+.classes_card1 {
+    flex-basis: calc(30.333% - 2vh); /* Each card takes 1/3 of the row, minus the gap */
+    margin-bottom: 2vh; /* Space between rows */
+    height: 345px;
+    padding: 25px 15px;
+    background-color: #e8d9d9 ;
+    border-radius:15px;
+}
+
+.classes_card_photo11{
+    /* border-radius: 25px; */
+    height:150px;
+    margin:auto;
+    width:150px;
+    margin-top:20px;
+    border-radius:100px;
+}
+.classes_card_content_heading{
+    margin:7px 0;
+    /* margin-bottom:-20px; */
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    font-variation-settings:
+      "wdth" 100;
+}
+.classes_card_contents{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw
+}
+.classes_sections_btn:hover{
+    background-color: gray;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+.classes_card_content_btn{
+    text-align: center;
+    margin: 8px auto;
+    background-color: #ff3d3d ;
+    width: 270px;
+    padding: 4px 0;
+    color: white;
+    border-radius: 15px;
+}
+
+.classes_sections {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    justify-content: space-between;
+    padding: 6vh 14vw;
+    gap: 2vh; /* Adds space between rows */
+}
+
+.classes_sections_btn {
+    padding: 6px 15px;
+    border-radius: 25px;
+    background-color: white;
+    border-style: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    //flex-basis: calc(14.28% - 1vh); /* Each button takes up 1/7 of the row (7 items), minus some gap */
+    margin-bottom: 1vh;
+}
+
+/* For small devices like mobile (width less than 768px) */
+@media (max-width: 1024px) {
+    .classes_sections_btn {
+        flex-basis: calc(33.33% - 1vh); /* 3 buttons per row */
+    }
+}
+
+/* For small devices like mobile (width less than 768px) */
+@media (max-width: 768px) {
+    .classes_sections_btn {
+        flex-basis: calc(50% - 1vh); /* 2 buttons per row */
+    }
+}
+
+/* For very small devices (width less than 480px) */
+@media (max-width: 480px) {
+    .classes_sections_btn {
+        flex-basis: 100%; /* 1 button per row */
+    }
+}
+
+
+/* For small devices like mobile (width less than 768px) */
+@media (max-width: 768px) {
+    .third_card1 {
+        flex-basis: 100%; /* Full width on mobile */
+    }
+}
+
+/* For tablets and medium-sized devices (width between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .third_card1 {
+        flex-basis: calc(50% - 2vh); /* 2 cards per row on tablets */
+    }
+}

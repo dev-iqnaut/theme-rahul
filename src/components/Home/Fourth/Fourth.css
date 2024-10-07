@@ -1,0 +1,83 @@
+.fourth_container {
+    background-color: #FEFEFF;
+    padding: 6vh 0;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.fourth_heading {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fourth_image {
+    width: 90%;
+    margin: 4vh auto;
+}
+
+.fourth_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+    text-align: center;
+    flex-wrap: wrap; /* Wraps content on smaller screens */
+}
+.fourth_value{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.fourth_btn {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color:#AFD133;
+    border-radius: 25px;
+    color:white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .fourth_heading {
+        font-size: 28px; /* Adjust font size for medium screens */
+    }
+    .fourth_content {
+        padding: 2vh 3vw; /* Reduce padding on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .fourth_heading {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    .fourth_image {
+        width: 100%; /* Full width image on smaller screens */
+    }
+    .fourth_content {
+        flex-direction: column; /* Stack content vertically on small screens */
+        padding: 2vh 2vw; /* Adjust padding */
+    }
+    .fourth_btn {
+        width: 80%; /* Button takes 80% width on smaller screens */
+        margin: 0 auto; /* Center the button */
+    }
+}
+
+@media (max-width: 480px) {
+    .fourth_heading {
+        font-size: 20px; /* Smaller font size for very small screens */
+    }
+    .fourth_image {
+        width: 100%; /* Full width image */
+        margin: 2vh auto; /* Adjust margin */
+    }
+    .fourth_content {
+        padding: 2vh 1vw; /* Less padding for very small screens */
+    }
+    .fourth_btn {
+        width: 100%; /* Button takes full width */
+        padding: 12px; /* Adjust button padding */
+    }
+}

@@ -1,0 +1,250 @@
+.about_container {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 2vh 0 0 0;
+}
+
+.about_headingDiv {
+    background-color: #FFF6F1;
+    text-align: center;
+    padding: 14vh 0 8vh 0;
+}
+.about_content{
+    background-color: #FEFEFF;
+}
+.about_content_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+    gap: 5vw;
+    background-color: #FEFEFF;
+}
+
+.about_content_1_image {
+    width: 600px;
+    height: 400px;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .about_content_1 {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
+    .about_content_1_image {
+        width: 100%; /* Adjust image width */
+        height: auto;
+    }
+}
+
+.about_content_believe {
+    background-color: #FED359;
+    padding: 6vh 5vw;
+}
+
+.about_content_believe_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .about_content_believe_heading {
+        flex-direction: column; /* Stack class boxes vertically */
+        text-align: center;
+    }
+}
+
+.about_content_believe_row1 {
+    display: flex;
+    gap: 1vw;
+    margin: 2vh 0;
+}
+@media (max-width: 768px) {
+    .about_content_believe_row1 {
+        flex-direction: column; /* Stack class boxes vertically */
+        text-align: center;
+    }
+}
+
+.about_content_believe_row1_box {
+    padding: 1vh 3.5vw;
+    background-color: #FEFEFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Classes section */
+.about_content_classes {
+    
+    padding: 8vh 5vw;
+    background-color: #FEFEFF;
+}
+
+.about_content_classes_allbox {
+    padding: 4vh 0;
+}
+
+.about_content_classes_row1 {
+    display: flex;
+}
+
+/* Make class boxes responsive */
+@media (max-width: 768px) {
+    .about_content_classes_row1 {
+        flex-direction: column; /* Stack class boxes vertically */
+        text-align: center;
+    }
+}
+
+.about_content_classes_row1_box {
+    display: flex;
+    align-items: center;
+}
+
+.about_content_classes_enrollBtn {
+    text-align: center;
+    width: 180px;
+    padding: 8px;
+    font-weight: bold;
+    margin: 4vh auto;
+    color: white;
+    border-radius: 30px;
+    background-color: #232443;
+}
+
+/* Explore section */
+.about_content_explore {
+    background-color: #FFF6F1;
+}
+
+.about_content_explore_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+}
+
+/* Make explore section responsive */
+@media (max-width: 768px) {
+    .about_content_explore_data {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+}
+
+.about_content_rating_all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding: 6vh 5vw;
+    text-align: center;
+}
+
+.about_content_rating_value {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.about_content_rating_btn {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: lightgreen;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+//////////**///////
+.about_content_teachers{
+    background-color:#FEFEFF;
+    padding: 4vh 5vw;
+}
+.about_content_teachers_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5vw 20px 5vw;
+}
+.about_teacher_title{
+    font-size: 42px;
+    font-weight: bold;
+}
+.about_seeAll {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.about_teachers_cards{
+    display: flex;
+    flex-wrap: wrap; /* Wrap the cards to the next row */
+    justify-content: space-between; /* Evenly space cards */
+    padding: 5vh 5vw 3vh 5vw;
+    margin: 5vh 0;
+    gap: 3vh; /* Add gap between rows */
+
+}
+.about_teachers_card1{
+    flex-basis: calc(25.333% - 2vh); /* Each card takes 1/3 of the row, minus the gap */
+    margin-bottom: 2vh; /* Space between rows */
+    height: 335px;
+    background-color: #e8d9d9 ;
+    border-radius:15px;
+}
+.about_third_card_photoBox{
+    background-color: #d8f6fd ;
+    width: 336px;
+    height:200px;
+    border-radius:15px 15px 0 0;
+
+}
+.about_teachers_card_photo11{
+    height:200px;
+    margin:auto;
+    width:240px;
+    /* margin-top:20px; */
+    /* background-color: blue; */
+}
+.about_teachers_card_content_heading{
+    margin:15px 0;
+    /* margin-bottom:-20px; */
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    font-variation-settings:
+      "wdth" 100;
+}
+.about_teachers_card_contents_description{
+    margin-top:-10px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    text-align: center;
+    font-variation-settings:
+      "wdth" 100;
+}
+.about_teachers_card_contents{
+    margin:25px 0;
+}
+.about_teachers_card1:hover{
+    background-color:#AFD133;
+}
+
+//////**//////
+
+/* Make rating section responsive */
+@media (max-width: 768px) {
+    .about_content_rating_all {
+        flex-direction: column; /* Stack rating elements vertically */
+    }
+}

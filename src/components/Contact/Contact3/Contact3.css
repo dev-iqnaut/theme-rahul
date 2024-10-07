@@ -1,0 +1,115 @@
+.contact3_container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    padding: 14vh 6vw;
+    background-color: #FEFEFF;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.details {
+    width: 38rem; /* w-96 */
+    padding-bottom: 0.0rem; /* pb-2 */
+    border-style: none;
+    margin-bottom: 1.50rem; /* mb-5 */
+    /* border: 1px solid #4b5563;  */
+    border-radius: 10px; /* rounded-xl */
+    /* border-style: 1px solid black; */
+}
+
+.summary {
+    text-transform: uppercase; /* uppercase */
+     /* rounded-xl */
+    color: inherit; /* group-open:text-white (default color) */
+    padding: 1rem 1.25rem; /* py-2 mb-2 px-5 */
+    background-color: rgb(253, 200, 139); /* default background */
+    display: flex; /* flex */
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+    cursor: pointer; /* cursor-pointer */
+    font-weight: bold; /* font-bold */
+    
+}
+
+.details[open] .summary {
+    color: white; /* group-open:text-white */
+    background-color: rgb(253, 200, 139); /* group-open:bg-[#ff9b24] */
+    
+}
+
+.icon-add {
+    display: inline; /* group-open:hidden */
+
+}
+
+.details[open] .icon-add {
+    display: none; /* group-open:hidden */
+}
+
+.icon-minus {
+    display: none; /* hidden */
+}
+
+.details[open] .icon-minus {
+    display: inline; /* group-open:inline */
+}
+
+.answer {
+    padding-left: 1rem; /* px-1 */
+    width: inherit; /* w-inherit */
+    background-color:rgb(253, 200, 139);
+    
+}
+
+.contact3_right {
+    margin-right: 8vw;
+}
+
+.contact3_right_data {
+    /* Add styles here if needed */
+}
+
+.contact3_right_imageHouse {
+    height: 300px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact3_container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 4vh 4vw; /* Adjust padding */
+    }
+
+    .details {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .contact3_right {
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+
+    .contact3_right_imageHouse {
+        height: 200px; /* Reduce height on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .summary {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .answer {
+        padding-left: 0.5rem; /* Increase left padding for readability */
+    }
+
+    .contact3_container {
+        padding: 3vh 2vw; /* Further reduce padding on very small screens */
+    }
+
+    .contact3_right_imageHouse {
+        height: 150px; /* Further reduce height on very small screens */
+    }
+}

@@ -1,0 +1,92 @@
+.contact1_container {
+    background-color: #FEFEFF;
+    padding: 2vh 5vw;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.contact1_content {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    justify-content: space-between;
+}
+
+.contact1_content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_content_left_down {
+    background-color: #FFF6F1;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contact_content_left_down_innerdiv {
+    background-color: #FEFEFF;
+    margin: 1vh 2vw;
+    padding: 10px;
+    gap: 12px;
+    border-radius: 10px;
+}
+
+.contact_content_left_down_innerdiv_timing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact1_content_right {
+    background-color: #b3faff ;
+    width: 100%; /* Full width on smaller screens */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact1_content_right_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact1_content_right_form_input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact1_content_right_form_btn {
+    width: 100%; /* Full width button */
+    text-align: center; /* Center the text */
+    background-color: #F63C50 ; /* Add color for visibility */
+    color: white; /* Text color */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .contact1_content {
+        flex-direction: row; /* Side by side on medium to larger screens */
+    }
+
+    .contact1_content_left {
+        width: 45%; /* Adjust width */
+    }
+
+    .contact1_content_right {
+        width: 50%; /* Adjust width */
+    }
+
+    .contact1_content_right_form_btn {
+        width: auto /* Adjust button width */
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact1_content {
+        padding: 20px; /* Add padding for larger screens */
+    }
+}

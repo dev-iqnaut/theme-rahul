@@ -1,0 +1,82 @@
+.footer_container {
+    background-color: #232443;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw 10vh 5vw;
+}
+
+/* Make the footer content responsive */
+@media (max-width: 768px) {
+    .footer_content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the items */
+        text-align: center;
+    }
+}
+
+.footer_content_last_input {
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    margin: 2vh 0;
+}
+
+.footer_content_last_allspan {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.footer_content_last_span {
+    color: white;
+    border-radius: 100px;
+    font-size: 10px;
+    text-align: center;
+    background-color: red;
+}
+
+.footer_content_last_subscribe {
+    padding: 4px 14px;
+    border-radius: 18px;
+    background-color: lightgreen;
+}
+
+/* Copyright section styles */
+.footer_cpyright {
+    background-color: #FFF6F1;
+    color: rgb(169, 170, 173);
+    display: flex;
+    padding: 2vh 5vw;
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+/* Make copyright section responsive */
+@media (max-width: 768px) {
+    .footer_cpyright {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_cpyright_left,
+    .footer_cpyright_right {
+        justify-content: center;
+    }
+}
+
+.footer_cpyright_left {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_cpyright_right {
+    /* You can add styles here if needed */
+}
