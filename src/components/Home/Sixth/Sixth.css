@@ -12,9 +12,9 @@
 }
 
 .sixth_card1 {
-    width: 350px;
-    height: 240px;
-    padding: 10px;
+    width: 27vw;
+    height: 40vh;
+    padding: 28px;
     border-radius: 15px;
     background-color: #FFF6F1;
     margin-bottom: 20px; /* Adds margin for smaller screens */
@@ -32,12 +32,15 @@
     width: 80px;
     height: 80px;
     border-radius: 50px;
+    background-color: lightgray;
+    
 }
 
 .sixth_heading {
     text-align: center;
     font-size: 48px;
     font-weight:bold;
+    color:#1E1E3E;
 }
 
 /* Media Queries for responsiveness */

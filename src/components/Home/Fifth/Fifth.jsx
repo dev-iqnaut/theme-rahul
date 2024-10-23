@@ -10,27 +10,27 @@ const Fifth = () => {
         <div className='fifth_box'>
             <div className='fifth_leftbox'>
                 <div className='fifth_leftbox1'>
-                <FaHandSparkles style={{fontSize:'32px'}}/>
+                <FaHandSparkles style={{fontSize:'48px',color:'red'}}/>
                     <h1 style={{fontSize:'24px',fontWeight:'bold'}}>Community</h1>
                     <p>Building a supportive and <br />inclusive community.</p>
                     
                 </div>
                 <div className='fifth_leftbox1'>
-                <FaHandSparkles style={{fontSize:'32px'}}/>
-                    <h1 style={{fontSize:'24px',fontWeight:'bold'}}>Community</h1>
-                    <p>Building a supportive and <br />inclusive community.</p>
+                <FaHandSparkles style={{fontSize:'48px',color:'purple'}}/>
+                    <h1 style={{fontSize:'24px',fontWeight:'bold'}}>Creativity</h1>
+                    <p>Encouraging creative <br />expression and innovation</p>
                 </div>
             </div>
             <div className='fifth_rightbox'>
                 <div className='fifth_rightbox1'>
-                <FaHandSparkles style={{fontSize:'32px'}}/>
-                    <h1 style={{fontSize:'24px',fontWeight:'bold'}}>Community</h1>
-                    <p>Building a supportive and <br />inclusive community.</p>
+                <FaHandSparkles style={{fontSize:'48px',color:'blue'}}/>
+                    <h1 style={{fontSize:'24px',fontWeight:'bold'}}>Respect</h1>
+                    <p>Teaching respect for oneself <br />and other children</p>
                 </div>
                 <div className='fifth_rightbox1'>
-                <FaHandSparkles style={{fontSize:'32px'}}/>
-                    <h1 style={{fontSize:'24px',fontWeight:'bold'}}>Community</h1>
-                    <p>Building a supportive and <br />inclusive community.</p>
+                <FaHandSparkles style={{fontSize:'48px',color:'green'}}/>
+                    <h1 style={{fontSize:'24px',fontWeight:'bold'}}>Growth</h1>
+                    <p>Promoting personal growth <br />and knowledge learning.</p>
                 </div>
             </div>
         </div>

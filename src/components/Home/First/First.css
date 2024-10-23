@@ -1,62 +1,89 @@
-.first_container{
-    background-image: url('../../../assets/bk1.jpg'); /* adjust the path */
+.first_container {
+    background-image: url('../../../assets/bk6.png'); /* adjust the path */
     background-size: cover;
     background-position: center;
-    height:600px;
+    height: 900px;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
 
-    /* height: 100vh; */
+/* Content inside the container */
+.first_content {
+    margin-top: 16vh;
+    text-align: center;
 }
-.first_content{
-    margin-top: 150px;
-    
-}
-.first_slogan{
+
+/* Slogan styling */
+.first_slogan {
     font-size: 48px;
-    font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    text-align: center;
-    padding-top: 5vh; 
-    color: white;
+    color: #1E1E3E;
 }
 
-.first_botton{
+/* Buttons container */
+.first_botton {
     display: flex;
-
+    align-items: center;
     justify-content: center;
-    /* place-self: center; */
-    gap: 1vw;
-    
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
-.first_btn1{
-    background-color: blue;
-    padding: 10px 3vw; 
+
+/* Button 1 */
+.first_btn1 {
+    background-color: #F73C51;
+    padding: 10px 3vw;
     border-radius: 20px;
     color: white;
+    text-align: center;
+    min-width: 120px; /* Ensure minimum button size */
 }
-.first_btn2{
-    background-color: green;
-    padding: 10px 1vw; 
-    border-radius: 20px;
-    color: white;
+
+/* Button 2 */
+.first_btn2 {
+    display: flex;
+    align-items: center;
+    padding: 10px 1vw;
+    color: black;
+    gap: 15px;
+    min-width: 120px;
 }
-.first_btn1_play{
+
+/* Play button inside btn1 */
+.first_btn1_play {
     margin-top: 5px;
     font-size: 42px;
     color: white;
     background-color: black;
     border-radius: 25px;
 }
-@media(max-width:500px){
-    .first_slogan{
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .first_slogan {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    .first_slogan {
         font-size: 28px;
     }
-    .first_botton{
-        display: flex;
-        flex-direction:column;
-        align-items:center;
+
+    .first_content {
+        margin-top: 10vh;
+    }
+
+    .first_botton {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .first_btn1, .first_btn2 {
+        width: 60%; /* Ensure buttons take up most of the width */
+        justify-content: center;
     }
 }

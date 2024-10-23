@@ -14,8 +14,8 @@ const First = () => {
         </div>
         <div className="first_botton">
            <div className="first_btn1">Join Now</div>
-           <FaPlayCircle className='first_btn1_play'/>
-           <div className="first_btn2">View Our School</div>
+           
+           <div className="first_btn2"><FaPlayCircle className='first_btn1_play'/>View Our School</div>
         </div>
         </div>
     </div>

@@ -9,7 +9,7 @@ const Hfaq = () => {
        <div className='hfaq_content'>
            <div className='hfaq_left'>
               <h1 className='hfaq_left_h1'>Answer for <br /> questions</h1>
-              <div className='hfaq_left_ask'>Ask a question</div>
+              <div className='hfaq_left_ask' style={{color:'white'}}>Ask a question</div>
            </div>
            <div className='contact3_left'>
       {faqData.map((faq, index) => (

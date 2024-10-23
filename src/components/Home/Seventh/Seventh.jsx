@@ -17,10 +17,11 @@ const Seventh = () => {
             <div className='seventh_summerDay_left'>
                <div className='seventh_summerDay_left_content'>
                <div className='seventh_summerDay_left_content_btn'>Events</div>
-               <h1 className='seventh_summerDay_left_content_h1'>Summer Fun Day</h1>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, in? <br />
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, laborum! <br />
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, enim!
+               <h1 className='seventh_summerDay_left_content_h1' style={{color:"#1E1E3E"}}>Summer Fun Day</h1>
+               <p style={{color:'GrayText'}}>
+                Celebrate the start of summer with us! <br />
+                Enjoy a day filled with laughter, play, and <br />
+                spirit with fun outdoor activities.
                </p>
                <div className='seventh_summerDay_left_content_available'>
                   <div className='seventh_summerDay_left_content_available_date'>
@@ -39,7 +40,7 @@ const Seventh = () => {
         </div>
 
         <div className='blog_relatedArticles_heading'>
-        <h2 className='blog_relatedArticlesTitle'>Related Articles</h2>
+        <h2 className='blog_relatedArticlesTitle' style={{color:'#1E1E3E'}}>Related Articles</h2>
         <p className='blog_seeAll'>See all articles</p>
       </div>
      <div className='blog_relatedArticles'>

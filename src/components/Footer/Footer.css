@@ -57,6 +57,18 @@
     justify-content: space-between;
     gap: 2vh;
 }
+.footer_cpyright_right{
+     /* LinkedIn's primary color */
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+
+}
+.footer_cpyright_right:hover{
+    color: #0056b3;
+  text-decoration: underline;
+  cursor:pointer;
+
+}
 
 /* Make copyright section responsive */
 @media (max-width: 768px) {

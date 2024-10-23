@@ -18,6 +18,7 @@
     height: 200px;
     background-color: white;
     margin-bottom:10px;
+    padding-top:30px;
     border-radius: 10px;
 }
 
@@ -30,6 +31,7 @@
     justify-content: center;
     /* padding-top: 80px; */
     padding-left: 20px;
+    padding-top:30px;
     width: 250px;
     height: 200px;
     background-color: white;
@@ -46,6 +48,7 @@
 .fifth_right_data_heading{
     font-size:48px;
     font-weight:bold;
+    color:#1E1E3E;
 }
 .fifth_right_data_para{
 
