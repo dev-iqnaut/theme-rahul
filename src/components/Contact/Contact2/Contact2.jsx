@@ -6,7 +6,10 @@ import cartoon from '../../../../assets/contactCartoon.png'
 import { FaLocationPin } from "react-icons/fa6";
 
 
-const Contact2 = () => {
+const Contact2 = ({cotact}) => {
+  // const contact= JSON.parse(cotact || '{}');
+
+
   return (
     <>
     <div className='contact2_container'>
@@ -14,18 +17,18 @@ const Contact2 = () => {
        <div className='contact2_content'>
          <div className='contact2_content_left'>
             <h1 style={{fontSize:'36px',fontWeight:'bold'}}>Visit Us</h1>
-            <p style={{display:'flex', alignItems:'center'}}><FaLocationPin style={{color:'red'}}/>123 Kindergarder Lane, Edward State, 444602</p>
+            <p style={{display:'flex', alignItems:'center'}}><FaLocationPin style={{color:'red'}}/>{cotact.location}</p>
          </div>
          <div className='contact2_content_right'>
            <div className='contact2_content_rightContent'>
            <div >
             
             <p style={{color:'gray'}}>Phone</p>
-            <h3 style={{fontWeight:'bold'}}>+91-1234567890</h3>
+            <h3 style={{fontWeight:'bold'}}>{cotact.phone_number}</h3>
            </div>
            <div>
             <p style={{color:'gray'}}>Email</p>
-            <h3 style={{fontWeight:'bold'}}>kidztar@gmail.com</h3>
+            <h3 style={{fontWeight:'bold'}}>{cotact.email}</h3>
            </div>
            </div>
            <img src={cartoon} alt="" className='contact2_content_right_cartoon'/>

@@ -2,17 +2,27 @@ import React from 'react';
 import './Footer.css';
 import { useDataContext } from '../../DataContxt';
 
-const Footer = () => {
-  const data = useDataContext();
-  console.log(data?.siteData.ContactUs);
+const Footer = ({pasedInfo}) => {
+
+ 
+  // const siteData = data?.siteData || 'data not found';
+  // const email = data.siteData.ContactUs.email ;
+  // console.log(email);
+
+
+  //   const email = data?.siteData?.ContactUs.email || {};
+  // console.log(email);
+
+
+  const harsedInfo = JSON.parse(pasedInfo || '{}');
+  // console.log(harsedInfo);
   
+  
+
   
 
   return (
     <>
-      {/* {data?.siteData.ContactUs.map((item) => (
-        
-      ))} */}
       <div className="footer_container" >
           <div className="footer_content">
             {/* Links Section */}
@@ -40,11 +50,14 @@ const Footer = () => {
             {/* Contacts Section */}
             <div className="footer_content_contacts">
               <h1 style={{ fontSize: '24px' }}>Contacts</h1>
-              <p style={{ color: 'gray' }}>123 Kindergarder Lane, 444602</p>
-              <p style={{ color: 'gray' }}>+91-8149927348</p>
+              {/* <p style={{ color: 'gray' }}>{siteData.ContactUs.location}</p> */}
+              <p style={{ color: 'gray' }}>{harsedInfo.location}</p>
+              <p style={{ color: 'gray' }}>{harsedInfo.phone_number}</p>
               <p style={{ color: 'gray' }}>
-                {/* {data.siteData?.ContactUs?.email || 'Email not available'} */}
-                email@123.gamil.com
+                {harsedInfo.email || 'Email not available'}
+                
+                
+                
               </p>
               <p style={{ color: 'white', fontWeight: 'bold', textDecoration: 'underline' }}>Send A Message</p>
             </div>
@@ -71,7 +84,7 @@ const Footer = () => {
               <li>Site Maps</li>
             </ul>
             <div className="footer_cpyright_right">
-  Developed by <a href="https://www.linkedin.com/in/rahul-frontend/" target="_blank" rel="noopener noreferrer">Rahul Chimote</a>
+  Developed by <a href={harsedInfo.linkedin_link || 'linkedIn'} target="_blank" rel="noopener noreferrer">Rahul Chimote</a>
 </div>
           </div>
         </div>

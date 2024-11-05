@@ -1,7 +1,12 @@
 import React from 'react'
 import './Contact1.css'
+import { useDataContext } from '../../../DataContxt';
 
 const Contact1 = () => {
+//   const data = useDataContext();
+//     const contactData = data.length > 0 ? data[0].siteData?.ContactUs : {};
+// console.log(contactData.email);
+  
   return (
     <>
     <div className='contact1_container'>

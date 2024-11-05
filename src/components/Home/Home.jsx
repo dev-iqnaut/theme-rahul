@@ -13,32 +13,22 @@ import { useState,useEffect } from 'react';
 import {db} from '../../config/firebase'
 import { DataContext } from '../../DataContxt';
 
-const Home = () => {
+const Home = ({homeInfo}) => {
   
 
-  const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const id="www.kidztar.in"
-        const listRef=doc(db,"sites",id);
-        const snapshot=await getDoc(listRef);
-        const listData=snapshot.data()
-        // console.log(listData);
-        setData(listData);        
-    } catch (error) {
-        console.log("error at firebase",error);
-        
-    }
-  }
 
-    fetchData();
-  }, []);
+   const gomeInfo= JSON.parse(homeInfo || '{}');
+  //  console.log(gomeInfo);
+   
+
+  // console.log(data);
+//   const contactData = data.length > 0 ? data[0].siteData?.ContactUs : {};
+// console.log(contactData.email);
   
 
   return (
-    <DataContext.Provider value={data}>
+    
     <div
       style={{
         fontFamily: "'Fredoka', sans-serif",
@@ -47,17 +37,39 @@ const Home = () => {
         fontVariationSettings: "'wdth' 100",
       }}
     >
-      <First/>
-      <Second data={data} />
-      <Third data={data} />
-      <Fourth data={data} />
-      <Fifth data={data} />
-      <Sixth data={data} />
+      <First gomeInfo={gomeInfo}/>
+      <Second  />
+      <Third  />
+      <Fourth  />
+      <Fifth  />
+      <Sixth  />
       <Hfaq />
-      <Seventh data={data} />
+      <Seventh  />
     </div>
-  </DataContext.Provider>
+  
   )
 }
 
 export default Home
+
+
+
+{/* <DataContext.Provider >
+<div
+  style={{
+    fontFamily: "'Fredoka', sans-serif",
+    fontOpticalSizing: 'auto',
+    fontStyle: 'normal',
+    fontVariationSettings: "'wdth' 100",
+  }}
+>
+  <First/>
+  <Second  />
+  <Third  />
+  <Fourth  />
+  <Fifth  />
+  <Sixth  />
+  <Hfaq />
+  <Seventh  />
+</div>
+</DataContext.Provider> */}

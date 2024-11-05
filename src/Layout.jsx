@@ -3,13 +3,13 @@ import Navbar from './components/Home/Navbar/Navbar.jsx'; // Your Navbar compone
 import Footer from './components/Footer/Footer.jsx'; // Your Footer component
 import React from 'react'
 
-const Layout = () => {
+const Layout = ({contactInfo}) => {
   return (
     <div>
       <Navbar />
       {/* This is where the child route content will be rendered */}
       <Outlet />
-      <Footer />
+      <Footer pasedInfo={contactInfo} />
     </div>
   );
 };

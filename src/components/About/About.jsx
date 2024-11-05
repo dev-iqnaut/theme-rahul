@@ -6,7 +6,8 @@ import abt3 from '../../../assets/about/abt3.png'
 import teacher3 from '../../../assets/classes/teacher3.png'
 import { FaHandshake } from "react-icons/fa";
 
-const About = () => {
+const About = ({AboutInfo}) => {
+    const AboutUsInfo=JSON.parse(AboutInfo || '{}');
   return (
     <>
     <div className='about_container'>
@@ -18,10 +19,8 @@ const About = () => {
         <div className='about_content_1'>
             <img src={abt1} alt="" className='about_content_1_image'/>
             <div className='about_content_1_data'>
-                <h1 style={{fontSize:'48px',fontWeight:'bold'}}>We provide vibrant and nurturing class environment</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo ducimus
-                    numquam eveniet consectetur, commodi dolor? Possimus, vel, consequatur suscipit
-                    itaque tempore assumenda expedita laudantium architecto sint dolorem fugiat autem.</p>
+                <h1 style={{fontSize:'48px',fontWeight:'bold'}}>{AboutUsInfo.mission}</h1>
+                <p>{AboutUsInfo.description}</p>
             </div>
         </div>
 

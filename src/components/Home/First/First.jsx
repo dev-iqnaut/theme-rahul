@@ -4,10 +4,15 @@ import { FaPlayCircle } from "react-icons/fa";
  
 
 
-const First = () => {
+const First = ({gomeInfo}) => {
+  // const chomeInfo=JSON.parse(gomeInfo || {});
+  // console.log(chomeInfo);
+  // console.log(gomeInfo);
+  
+  
   return (
     <>
-    <div className='first_container'>
+    <div className='first_container' style={{backgroundImage: `url(${gomeInfo?.hero?.heroImage || '../../../assets/bk6.png'})`}}>
         <div className='first_content'>
         <div className='first_slogan'>
             Unleash Creativity,<br />Foster Growth, Built Friendships.

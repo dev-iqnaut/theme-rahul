@@ -5,7 +5,8 @@ import { getImageUrl } from "../../utils";
 import Navbar from '../Home/Navbar/Navbar'
 import Eighth from '../Home/Eighth/Eighth'
 
-const Teachers = () => {
+const Teachers = ({FacultyInfo}) => {
+  const facultyPhoto = JSON.parse(FacultyInfo || '{}');
   return (
     <>
     <div>
@@ -21,18 +22,18 @@ const Teachers = () => {
       {classesData.map((classItem, index) => (
         <div key={index} className='teachers_card1'>
            <div className='third_card_photoBox'>
-            <img src={getImageUrl(classItem.imageSrc)} alt={classItem.title} className='teachers_card_photo11'/>
+            <img src={facultyPhoto.facultyPicture} alt={classItem.title} className='teachers_card_photo11'/>
           </div> 
           <div className='teachers_card_contents'>
-          <h2 className='teachers_card_content_heading'>{classItem.title}</h2>
-          <p className='teachers_card_contents_description'>{classItem.description}</p>
+          <h2 className='teachers_card_content_heading'>{facultyPhoto.facultyName}</h2>
+          <p className='teachers_card_contents_description'>{facultyPhoto.facultyDescription}</p>
           </div>
         </div>
       ))}
     </div>
 
      <br /><br />
-      <Eighth/>
+      
     </>
   )
 }
